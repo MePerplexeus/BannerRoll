@@ -1,0 +1,85 @@
+.bannerroll {
+  display: flex;
+  gap: 10px;
+  height: 45vh;
+  padding: 0 20px 20px 0;
+  margin-top: 18px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 10px;
+  scroll-behavior: smooth;
+  position: relative;
+}
+.bannerroll::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.bannerroll.square_slides .slide {
+  aspect-ratio: 1/1;
+  scroll-snap-align: center;
+}
+.bannerroll.square_slides .slide img {
+  width: 100%;
+  border: 1px solid rgba(40, 44, 63, 0.1019607843);
+  border-radius: 0.8rem;
+}
+.bannerroll.banner_slides .slide {
+  aspect-ratio: 1.8/1;
+  scroll-snap-align: center;
+}
+.bannerroll.banner_slides .slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid rgba(40, 44, 63, 0.1019607843);
+  border-radius: 0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .bannerroll {
+    display: flex;
+    gap: 10px;
+    width: calc(100vw - 40px);
+    padding: 0 20px 20px 20px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 10px;
+    scroll-behavior: smooth;
+    position: relative;
+  }
+  .bannerroll::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .bannerroll.square_slides .slide {
+    width: 90vw;
+    height: 90vw;
+    aspect-ratio: 1/1;
+    scroll-snap-align: center;
+  }
+  .bannerroll.square_slides .slide img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border: 1px solid rgba(40, 44, 63, 0.1019607843);
+    border-radius: 0.8rem;
+  }
+  .bannerroll.banner_slides .slide {
+    width: 90vw;
+    height: 50vw;
+    aspect-ratio: 1.8/1;
+    scroll-snap-align: center;
+  }
+  .bannerroll.banner_slides .slide img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border: 1px solid rgba(40, 44, 63, 0.1019607843);
+    border-radius: 0.8rem;
+  }
+}/*# sourceMappingURL=bannerroll.css.map */
