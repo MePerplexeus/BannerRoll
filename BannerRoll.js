@@ -73,3 +73,13 @@ function banner_counter_update_direct(banner_counter, currentItem) {
     $(banner_counter).children().removeClass('current');
     $($(banner_counter).children('.slide')[currentItem]).addClass('current');
 }
+
+function makeid(length=5) {
+    var result           = '';
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return "_" + result;
+}
