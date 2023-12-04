@@ -50,7 +50,7 @@
   max-width: 63px;
   height: 3px;
 }
-.slide_counter.dot .slide {
+.slide_counter.dots .slide {
   min-width: 4.5px;
   min-height: 4.5px;
   height: 4.5px;
@@ -164,7 +164,7 @@
   max-width: 63px;
   height: 3px;
 }
-.slide_counter.dot .slide {
+.slide_counter.dots .slide {
   min-width: 4.5px;
   min-height: 4.5px;
   height: 4.5px;
